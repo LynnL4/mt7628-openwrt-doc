@@ -66,7 +66,7 @@ Seeed MT7628 development board supports C/C++, Python, Node.js for device applic
        $ opkg install helloworld_1.0.0-1_ramips_24kec.ipk
        ```
 
-     - 在 Seeed MT7628 development board 的 Terminal 上键入 **helloworld**
+     - Type **helloworld** in Terminal
 
    For more C/C++ application development, please refer to
 

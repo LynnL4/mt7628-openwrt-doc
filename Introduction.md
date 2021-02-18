@@ -15,8 +15,8 @@ Seeed MT7628 development board development platform supports Makefile compilatio
    - [Virtual Machine](http://virtualbox.org/)
    - [WSL (recommended)](https://docs.microsoft.com/en-us/windows/wsl/compare-versions#whats-new-in-wsl-2)
 
-2.  Install the necessary toolkit
-
+2. Install the necessary toolkit
+   
    ```shell
    $ sudo apt-get install git g++ libncurses5-dev subversion libssl-dev gawk libxml-parser-perl unzip
    ```
@@ -27,20 +27,20 @@ Seeed MT7628 development board development platform supports Makefile compilatio
    $ git clone https://github.com/Seeed-Studio/seeed-linux-openwrt
    ```
 
-4. Create a configuration   file feeds.conf, copied from the default template file feed.conf.default
+4. Create a configuration   file `feeds.conf`, copied from the default template file feed.conf.default
 
    ```shell
    $ cd seeed-linux-openwrt
    $ cp feeds.conf.default feeds.conf
    ```
 
-5. Add Seeed MT7628 development board feed path to feeds.conf
+5. Add Seeed MT7628 development board feed path to `feeds.conf`
 
    ```shell
    $ echo "src-git linkit https://github.com/LynnL4/linkit-smart-7688-feed.git;mtk7628" >> feeds.conf
    ```
 
-6.  Update the feed information in feeds.conf
+6. Update the feed information in feeds.conf
 
    ```
    $ ./scripts/feeds update
@@ -61,9 +61,9 @@ Seeed MT7628 development board development platform supports Makefile compilatio
 
 9.  Select the correct target configuration file, and add and remove modules as required
 
-   - 目标系统（Target System）:  Ralink RT288x/RT3xxx
-   - 子系统（Subtarget）:  MT7628 based boards
-   - 目标配置文件（Target Profile）: Seeed MT7628 development board
+   - Target System:  Ralink RT288x/RT3xxx
+   - Subtarget:  MT7628 based boards
+   - Target Profile: Seeed MT7628 development board
 
 10. Save and exit
 
